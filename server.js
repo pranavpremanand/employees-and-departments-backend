@@ -11,9 +11,7 @@ app.use("/", route);
 app.listen(port, () => console.log("Server is running on port:", port));
 
 mongoose.connect(
-    "mongodb://localhost:27017"
-//   "mongodb+srv://pranavpremanand:march16th@cluster0.1njw5bf.mongodb.net/dashboard"
-);
+    "mongodb://localhost:27017");
 const connection = mongoose.connection;
 connection
   .on("connected", () => console.log("Database is connected successfully!"))
